@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+body {
+  font-family: "Mukta", sans-serif;
+}
+textarea {
+  resize: vertical;
+}
+
+@media (max-width: 640px) {
+  textarea {
+    height: 120px;
+  }
+
+  .comment-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@theme {
+  --font-mukta: "Mukta", sans-serif;
+  --text-white-200: #fff;
+}
+
+
+:root {
+  --red1: #bf1e2e;
+  --gray1: #6f6f6f;
+  --gray2: #999999;
+}
+
+.bg-red1 {
+  background-color: var(--red1);
+}
+.bg-gray2 {
+  background-color: var(--gray2);
+}
+.text-red1 {
+  color: var(--red1);
+}
+.text-gray1 {
+  color: var(--gray1);
+}
+.text-gray2 {
+  color: var(--gray2);
+}
+
+.border-b-red1 {
+  border-bottom: 1px solid var(--red1);
+}

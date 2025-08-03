@@ -121,22 +121,22 @@ const LandingPage = () => {
   return (
     <Box>
       <Box
-        minHeight="50vh"
+        minHeight="32vh"
         display="flex"
         flexDirection="column"
         alignItems="center"
         justifyContent="center"
         sx={{
           // bgcolor:"#A4CCD9",
-      //  backgroundImage: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/wall.jpg')",
-          backgroundSize: "cover",
+       backgroundImage: "url('/cover.png')",
+          backgroundSize:'cover',
           backgroundPosition: "center",
           color: "white",
           textAlign: "center",
           px: 2,
         }}
       >
-        <Typography variant="h2" fontWeight="bold" mb={2} color="#2B1144">
+        {/* <Typography variant="h2" fontWeight="bold" mb={2} color="#237769">
           Study. Work. Settle Abroad.
         </Typography>
         
@@ -156,19 +156,19 @@ const LandingPage = () => {
           }}
         >
           Get Started
-        </Button>
+        </Button> */}
       </Box>
-      <Box sx={{bgcolor:"#2B1144",height:"20vh"}}>
+      {/* <Box sx={{bgcolor:"#2B1144",height:"20vh"}}>
 
-      </Box>
+      </Box> */}
    <Box
       sx={{
         textAlign: "center",
-        py: 8,
+        py: 4,
         px: 2,
         maxWidth: "1000px",
         mx: "auto",
-        height:"50vh"
+        height:"30vh"
       }}
     >
       {/* Red Small Heading */}
@@ -176,7 +176,7 @@ const LandingPage = () => {
         variant="h4"
         fontWeight="bold"
         sx={{
-          color: "#2B1144", 
+          color: "#237769", 
           letterSpacing: 1,
           textTransform: "uppercase",
         }}
@@ -189,7 +189,7 @@ const LandingPage = () => {
       <Typography
         variant="h4"
         fontWeight="bold"
-        sx={{ mb: 3 }}
+        sx={{ mb: 3,color:"#237769" }}
       >
         The Leading Education Consultancy In Nepal
       </Typography>
@@ -238,7 +238,7 @@ const LandingPage = () => {
         </Box>
       </Box>
       <Box sx={{ py: 8, px: 2}}>
-  <Typography variant="h4" align="center" fontWeight="bold" color="#2B1144" gutterBottom>
+  <Typography variant="h4" align="center" fontWeight="bold" color="#237769" gutterBottom>
     Our Services
   </Typography>
   <Grid container spacing={4} justifyContent="center" mt={2}>
@@ -249,7 +249,7 @@ const LandingPage = () => {
     ].map((service) => (
       <Grid item xs={12} sm={6} md={4} key={service.title}>
         <Card sx={{ p: 3, height: "100%", boxShadow: 3 }}>
-          <Typography variant="h6" fontWeight="bold" gutterBottom color="#2B1144">
+          <Typography variant="h6" fontWeight="bold" gutterBottom color="#237769">
             {service.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
@@ -261,7 +261,7 @@ const LandingPage = () => {
   </Grid>
 </Box>
 <Box sx={{ py: 10, backgroundColor: "#fafafa", textAlign: "center" }}>
-      <Typography variant="h5" color="#2B1144" fontWeight="bold">
+      <Typography variant="h5" color="#237769" fontWeight="bold">
         Our Testimonial
       </Typography>
       <Typography variant="h4" fontWeight="bold" mt={1} mb={5}>

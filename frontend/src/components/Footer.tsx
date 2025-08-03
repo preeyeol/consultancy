@@ -12,7 +12,7 @@ const Footer = () => {
           <Grid container spacing={10}>
             {/* Logo & Description */}
             <Grid item xs={12} md={3}>
-              <Typography variant="h6" fontWeight="bold">
+              <Typography variant="h6" fontWeight="bold" color="#2B1144">
                 BRIDGEWAY
               </Typography>
               <Typography variant="body2" sx={{ mt: 2 }}>
@@ -75,8 +75,8 @@ const Footer = () => {
       </Container>
 
       {/* Bottom Copyright */}
-      <Box borderTop="1px solid #899D76" py={2} textAlign="center">
-        <Typography variant="body2" color="text.secondary">
+      <Box borderTop="1px solid #2B1144" py={2} textAlign="center">
+        <Typography variant="body2" color="#2B1144">
           © {new Date().getFullYear()} Bridgeway Career Counselling. All rights reserved.
         </Typography>
       </Box>

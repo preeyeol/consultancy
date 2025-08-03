@@ -37,14 +37,14 @@ const ContactPage = () => {
   };
 
   return (
-    <Box sx={{display:"flex",flexDirection:"column",height:"90vh",mb:2 }}>
-<Box sx={{ p: 4, borderBottom: 1, borderColor: "#6A9099" }}>
+    <Box sx={{display:"flex",flexDirection:"column",height:"70vh",mb:2 }}>
+<Box sx={{ p: 4 }}>
   <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 2 }}>
-    <Box sx={{ height: 2, width: "100px", bgcolor: "#6A9099" }} />
+    <Box sx={{ height: 2, width: "100px", bgcolor: "#2B1144" }} />
     
     <Typography
       sx={{
-        color: "#6A9099",
+        color: "#2B1144",
         textAlign: "center",
         fontSize: 25,
         fontWeight: "bold",
@@ -55,14 +55,14 @@ const ContactPage = () => {
       CONNECT WITH US TO SECURE YOUR FUTURE
     </Typography>
     
-    <Box sx={{ height: 2, width: "100px", bgcolor: "#6A9099" }} />
+    <Box sx={{ height: 2, width: "100px", bgcolor: "#2B1144" }} />
   </Box>
 </Box>
 
 <Box sx={{display:"flex",flexDirection:"row"}}>
 
-          <Box sx={{m:5,width:"50%",alignContent:"center"}}>
-            <Typography variant="h6" mb={2} fontWeight="bold" color="#6A9099" textAlign={"center"}>
+          <Box sx={{m:5,width:"40%",alignContent:"center"}}>
+            <Typography variant="h6" mb={2} fontWeight="bold" color="#2B1144" textAlign={"center"}>
              Send Us Your Enquiry
             </Typography>
             <Box component="form" onSubmit={handleSubmit} >
@@ -98,15 +98,8 @@ const ContactPage = () => {
                     onChange={handleChange}
                   />
                 </Grid>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    label="Company"
-                    name="company"
-                    fullWidth
-                    value={formData.company}
-                    onChange={handleChange}
-                  />
-                </Grid>
+         
+      
                 <Grid item xs={12}>
                   <TextField
                     label="Message"
@@ -123,7 +116,7 @@ const ContactPage = () => {
   <Button
     type="submit"
     variant="contained"
-    sx={{ bgcolor: "#6A9099", px: 4 }}
+    sx={{ bgcolor: "#2B1144", px: 4 }}
   >
     SEND MESSAGE
   </Button>
@@ -136,11 +129,13 @@ const ContactPage = () => {
 
           <Box
             flex={1}
-            bgcolor={"#6A9099"}
+            bgcolor={"#2B1144"}
             color="white"
             display="flex"
             flexDirection="column"
             justifyContent="start"
+            borderRadius={6}
+            mx={4}
             p={4}
           >
             <Typography variant="h6" fontSize={36} gutterBottom>
